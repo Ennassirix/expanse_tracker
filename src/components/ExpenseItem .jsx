@@ -1,13 +1,13 @@
 import React from 'react'
 import { TiDelete } from 'react-icons/ti';
-export default function ExpenseItem({ id, name, cost }) {
+export default function ExpenseItem(props) {
     return (
-        <li key={id} className='list-group-item d-flex justify-content-between align-items-center'>
-            {name}
-            <div className='badge badge-primary badge-pill mr-3'>
-                <span>{cost}</span>
+        <li key={props.id} className='list-group-item d-flex justify-content-between align-items-center'>
+            {props.name}
+            <div >
+                <span className='badge rounded-pill bg-primary mr-3'>${props.cost}</span>
+                <TiDelete size='1.5em'></TiDelete>
             </div>
-            <TiDelete size='1.5em'></TiDelete>
         </li>
     )
 }

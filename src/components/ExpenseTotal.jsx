@@ -1,9 +1,8 @@
-import React from 'react'
-
-export default function () {
+export default function ExpenseTotal () {
+    
     return (
         <div className='alert alert-primary'>
-            <span>Spent So far : $490</span>
+            <span>Spent So far : $490 </span>
         </div>
     )
 }
